@@ -1,8 +1,7 @@
 import { parkAreas } from "./areas.js";
 import { getAreas } from "./database.js";
 import { getServices} from "./database.js"
-
-
+import { guestsList } from "./guests.js";
 
 
 const mainContainer = document.querySelector("#container")
@@ -15,6 +14,10 @@ const applicationHTML = `
         ${parkAreas()}
     </section>
 
+    <section class="guests--column list details__guests">
+        <h2>Guests</h2>
+        ${guestsList}
+    </section>
 `
 
 mainContainer.innerHTML = applicationHTML
