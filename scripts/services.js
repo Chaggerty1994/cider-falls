@@ -1,7 +1,12 @@
 
 import { getServices } from "./database.js"
 
+import { getAreaService } from "./database.js"
+
 const services = getServices()
+
+const areaServices = getAreaService()
+
 
 
 export const parkServices = () => {
@@ -11,7 +16,7 @@ export const parkServices = () => {
 for (const service of services) {
     
     serviceHTML += `
-    <div class="area__service">
+    <div id="area__service">
     ${service.name}
                  
     </div>

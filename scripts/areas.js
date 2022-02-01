@@ -10,6 +10,7 @@ import { getServices } from "./database.js";
 
 import { getGuests } from "./database.js";
 
+
 // declaring a variable whos value is the guests array
 
 const guestArray = getGuests()
