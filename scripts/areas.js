@@ -6,6 +6,13 @@ import { getAreas } from "./database.js";
 
 import { getServices } from "./database.js";
 
+// import the guests array from the database
+
+import { getGuests } from "./database.js";
+
+// declaring a variable whos value is the guests array
+
+const guestArray = getGuests()
 
 // declaring a variable whos value is the get areas copy of areas array
 
@@ -15,10 +22,35 @@ const areas = getAreas()
 
 const services = getServices()
 
-// declaring a variable whos value is 
-// the class of container in my index.html
+// making an event listener so that when an area is clicked
+// a window appears telling you how many guests are in that area
 
-// const contentTarget = document.querySelector("#container")
+document.addEventListener(
+    "click",
+    (clickEvent) => {
+        const itemClicked = clickEvent.target
+        if (itemClicked.id.startsWith("area")) {
+            const [, areaId] = itemClicked.id.split("__")
+
+            for (const area of areas) {
+
+                if (parseInt(areaId) === area.id) {
+
+                let guestString = ""
+
+                for (const guest of guestArray)
+
+                if ( parseInt(areaId) === guest.areaId) {
+                    
+                    guestString += `${guest.name} `
+                }
+            
+                window.alert(`${guestString}  are in this area`)
+            }
+            }
+        }
+    }
+)
 
 // defining and exporting a function whos purpose is to iterate
 // the areas array and services arrray. find matching services and areas
@@ -32,8 +64,9 @@ export const parkAreas = () => {
         for (const area of areas) { 
             areaHTML += `
                 <section class="area">
-                <h2 class="area__name">${area.name}</h2>`
-
+                <h2 id="area__${area.id}">${area.name}</h2>
+                </section>`
+                
         
         }
                   

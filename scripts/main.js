@@ -13,19 +13,19 @@ const applicationHTML = `
 </article>
 
 <article class="details">
-    <section class="areas--column list details__areas">
+    <section id="areas--column list details__areas">
         <h2>areas</h2>
         ${parkAreas()}
     </section>
 
-    <section class="services--column list details__services">
+    <section id="services--column list details__services">
         <h2>services</h2>
        ${parkServices()}
     </section>
 
 
 
-    <section class="guests--column list details__guests">
+    <section id="guests--column list details__guests">
         <h2>Guests</h2>
         ${listOfGuests()}
     </section>
