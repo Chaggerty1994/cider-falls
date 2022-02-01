@@ -37,16 +37,16 @@ document.addEventListener(
 
                 if (parseInt(areaId) === area.id) {
 
-                let guestString = ""
+                let guestString = []
 
                 for (const guest of guestArray)
 
                 if ( parseInt(areaId) === guest.areaId) {
                     
-                    guestString += `${guest.name} `
+                    guestString.push(guest.name) 
                 }
             
-                window.alert(`${guestString}  are in this area`)
+                window.alert(`${guestString.length} guests are in this area`)
             }
             }
         }
@@ -60,7 +60,7 @@ document.addEventListener(
 export const parkAreas = () => {
 
 // declaring a variable whos value is an unordered List
-    let areaHTML = "<ol>"
+    let areaHTML = "<ul>"
 // iterating the areas array
         for (const area of areas) { 
             areaHTML += `
@@ -68,12 +68,11 @@ export const parkAreas = () => {
                 <h2 id="area__${area.id}">${area.name}</h2>
                 </section>`
                 
-        
         }
                   
         
 
-        
+        areaHTML += "</ul>"
         return areaHTML
 
 }
