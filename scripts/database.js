@@ -158,31 +158,61 @@ const database =
         {
             id: 1,
             name: "tommy",
-
+            areaId: 1,
         },
 
         {
             id: 2,
             name: "lex",
-
+            areaId: 1,
         },
 
         {
             id: 3,
             name: "tina",
-
+            areaId: 2,
         },
 
         {
             id: 4,
             name: "larry",
-
+            areaId: 3,
         },
 
         {
             id: 5,
             name: "spike",
+            areaId: 3,
+        },
 
+        {
+            id: 6,
+            name: "jeremy",
+            areaId: 3,
+        },
+
+        {
+            id: 7,
+            name: "pickle",
+            areaId: 4,
+        },
+
+        {
+            id: 8,
+            name: "tito",
+            areaId: 5,
+        },
+
+        {
+            id: 9,
+            name: "the rock",
+            areaId: 6,
+        },
+
+        {
+            id: 10,
+            name: "ice pick",
+            areaId: 6,
         },
 
     ],
