@@ -146,7 +146,7 @@ const database =
 
 
         {
-            id: 14,
+            id: 15,
             name: "playground",
             areaId: 5,
 
@@ -196,14 +196,134 @@ const database =
 
         {
             id: 2,
+            areaId: 1,
+            serviceId: 4,
+        },
+
+        {
+            id: 3,
+            areaId: 1,
+            serviceId: 5,
+        },
+
+        {
+            id: 4,
             areaId: 2,
             serviceId: 2,
         },
 
         {
-            id: 3,
+            id: 5,
             areaId: 2,
             serviceId: 3,
+        },
+
+        {
+            id: 6,
+            areaId: 2,
+            serviceId: 6,
+        },
+
+        {
+            id: 7,
+            areaId: 3,
+            serviceId: 11,
+        },
+
+        {
+            id: 8,
+            areaId: 3,
+            serviceId: 9,
+        },
+
+        {
+            id: 9,
+            areaId: 3,
+            serviceId: 10,
+        },
+
+        {
+            id: 10,
+            areaId: 3,
+            serviceId: 12,
+        },
+
+        {
+            id: 11,
+            areaId: 3,
+            serviceId: 13,
+        },
+
+        {
+            id: 12,
+            areaId: 3,
+            serviceId: 3,
+        },
+
+        {
+            id: 13,
+            areaId: 4,
+            serviceId: 5,
+        },
+
+        {
+            id: 14,
+            areaId: 4,
+            serviceId: 2,
+        },
+
+        {
+            id: 15,
+            areaId: 5,
+            serviceId: 14,
+        },
+
+        {
+            id: 16,
+            areaId: 5,
+            serviceId: 15,
+        },
+
+        {
+            id: 17,
+            areaId: 5,
+            serviceId: 10,
+        },
+
+        {
+            id: 18,
+            areaId: 5,
+            serviceId: 12,
+        },
+
+        {
+            id: 19,
+            areaId: 5,
+            serviceId: 13,
+        },
+
+        {
+            id: 20,
+            areaId: 6,
+            serviceId: 2,
+        },
+
+        {
+            id: 21,
+            areaId: 7,
+            serviceId: 7,
+        },
+
+        {
+            id: 22,
+            areaId: 8,
+            serviceId: 3,
+        },
+
+        {
+            id: 23,
+            areaId: 9,
+            serviceId: 8,
         },
     ]
 }

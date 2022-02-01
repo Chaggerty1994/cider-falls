@@ -8,7 +8,10 @@ import { parkServices } from "./services.js";
 const mainContainer = document.querySelector("#container")
 
 const applicationHTML = `
-<h1>CIDER FALLS</h1>
+<article class="page-header">   
+    <header class="header"> <h1>CIDER FALLS</h1> </header>
+</article>
+
 <article class="details">
     <section class="areas--column list details__areas">
         <h2>areas</h2>
