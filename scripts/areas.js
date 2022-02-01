@@ -34,22 +34,14 @@ export const parkAreas = () => {
                 <section class="area">
                 <h2 class="area__name">${area.name}</h2>`
 
-        for (const service of services) {
-       
-            if (area.id === service.areaId) {
-                    areaHTML += `
-                    <div class="area__service">
-                    ${service.name}
-                                 
-                    </div>
-                    </section>`
-                     }
+        
         }
                   
-        }
+        
 
         
         return areaHTML
+
 }
 
 

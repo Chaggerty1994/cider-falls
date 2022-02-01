@@ -4,24 +4,36 @@ import { getGuests } from "./database.js";
 const guests = getGuests()
 
 
-export const guestsList = () => {
+// export const guestsList = () => {
 
-        let guestHTML = "<ul>"
+//         let guestHTML = "<ol>"
 
-    for (const guest of guests) { 
+//     for (const guest of guests) { 
 
-                guestHTML += `
+//                 guestHTML += `
                 
-                <section class="guest__name">
-                ${guest.name}
+//                 <section class="guest__name">
+//                 ${guest.name}
                              
-                </section>`
-            }
+//                 </section>`
+//             }
 
-            return guestHTML
-    }
+//             return guestHTML
+//     }
 
     
 
 
-    // console.log(guestsList())
+ export const listOfGuests = () => {
+     let guestHTML = "<ol>"
+
+     for (const guest of guests) {
+         guestHTML += ` <section class="guest__name">
+                        ${guest.name}
+                        </section>`
+     }
+     return guestHTML
+ }  
+
+
+ console.log(listOfGuests())

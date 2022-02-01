@@ -49,19 +49,7 @@ const database =
 
         },
 
-        {
-            id: 2,
-            name: "hiking",
-            areaId: 4,
-
-        },
-
-        {
-            id: 2,
-            name: "hiking",
-            areaId: 6,
-
-        },
+         
 
         {
             id: 3,
@@ -70,19 +58,7 @@ const database =
 
         },
 
-        {
-            id: 3,
-            name: "pickniking",
-            areaId: 6,
-
-        },
-
-        {
-            id: 3,
-            name: "pickniking",
-            areaId: 3,
-
-        },
+         
 
         {
             id: 4,
@@ -98,12 +74,7 @@ const database =
 
         },
 
-        {
-            id: 5,
-            name: "fishing",
-            areaId: 4,
-
-        },
+        
 
         {
             id: 6,
@@ -140,12 +111,7 @@ const database =
 
         },
 
-        {
-            id: 10,
-            name: "lodging",
-            areaId: 5,
-
-        },
+         
 
         {
             id: 11,
@@ -161,13 +127,7 @@ const database =
 
         },
 
-        {
-            id: 12,
-            name: "parking",
-            areaId: 5,
-
-        },
-
+         
         {
             id: 13,
             name: "information",
@@ -175,12 +135,7 @@ const database =
 
         },
 
-        {
-            id: 13,
-            name: "information",
-            areaId: 5,
-
-        },
+         
 
         {
             id: 14,
@@ -207,14 +162,26 @@ const database =
         },
 
         {
-            id: 1,
+            id: 2,
             name: "lex",
 
         },
 
         {
-            id: 1,
-            name: "stacy",
+            id: 3,
+            name: "tina",
+
+        },
+
+        {
+            id: 4,
+            name: "larry",
+
+        },
+
+        {
+            id: 5,
+            name: "spike",
 
         },
 
